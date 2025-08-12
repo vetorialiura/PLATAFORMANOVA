@@ -3,9 +3,9 @@ using UnityEngine;
 public class GalaxySpiral : MonoBehaviour
 {
     public ParticleSystem ps;
-    public int arms = 4;         // Número de braços da galáxia
-    public float spinSpeed = 1f; // Velocidade de rotação das partículas
-    public float twist = 1.5f;   // Torção do braço (quanto maior, mais espiral)
+    public int arms = 3;         // Nï¿½mero de braï¿½os da galï¿½xia
+    public float spinSpeed = 1f; // Velocidade de rotaï¿½ï¿½o das partï¿½culas
+    public float twist = 2f;   // Torï¿½ï¿½o do braï¿½o (quanto maior, mais espiral)
 
     ParticleSystem.Particle[] particles;
 
@@ -21,7 +21,7 @@ public class GalaxySpiral : MonoBehaviour
 
         for (int i = 0; i < count; i++)
         {
-            // Parâmetro de progressão ao longo do braço espiral
+            // Parï¿½metro de progressï¿½o ao longo do braï¿½o espiral
             float norm = (float)i / count;
             float angle = norm * arms * Mathf.PI * 2f + norm * twist * Mathf.PI * 2f + t;
 
